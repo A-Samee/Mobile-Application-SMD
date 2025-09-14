@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/socially"
+        android:contentDescription="Socially Logo"
+        android:layout_centerInParent="true" />
+
+
+    <TextView
+        android:id="@+id/from_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="124dp"
+        android:text="from"
+        android:textColor="#888888"
+        android:layout_centerInParent="true"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/smd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/from_text"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="1dp"
+        android:text="SMD"
+        android:textColor="#8B0000"
+        android:textSize="48sp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/home_indicator"
+        android:layout_width="200dp"
+        android:layout_height="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:contentDescription="Home Indicator"
+        android:layout_centerInParent="true"
+        android:src="@drawable/home" />
+
+</RelativeLayout>

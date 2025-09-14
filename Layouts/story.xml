@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/storyLines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:background="#E0E0E0">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/small_rectangle_grey" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/small_rectangle_lightgrey"
+ />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/small_rectangle_lightgrey" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/small_rectangle_lightgrey" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storyLines"
+        android:padding="8dp"
+        android:paddingTop="20dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/high"
+            android:text="Highlight: December 3, 2023"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Artist - Song Title"
+            android:gravity="center"
+            android:layout_below="@+id/high"
+            android:textStyle="italic"
+            android:textColor="#800000" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Close"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:layout_above="@+id/bottomNav"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img6"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#000000">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Activity"
+            android:src="@drawable/activity"
+            android:layout_weight="1"
+            android:tint="@color/white"
+            tools:ignore="UseAppTint" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/create2"
+            android:contentDescription="Create"
+            android:layout_weight="1"
+            android:tint="@color/white"
+            tools:ignore="UseAppTint"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/reel2"
+            android:contentDescription="Create Post"
+            android:tint="@color/white"
+            android:layout_weight="1"
+            tools:ignore="UseAppTint"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/high"
+            android:contentDescription="Browse"
+            android:tint="@color/white"
+            android:layout_weight="1"
+            tools:ignore="UseAppTint"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/share"
+            android:contentDescription="Send"
+            android:tint="@color/white"
+            android:layout_weight="1"
+            tools:ignore="UseAppTint"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/options"
+            android:contentDescription="More"
+            android:tint="@color/white"
+
+            tools:ignore="UseAppTint"/>
+    </LinearLayout>
+
+</RelativeLayout>
